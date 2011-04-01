@@ -1,8 +1,7 @@
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
-# Set to the name theme to load.
-# Look in ~/.oh-my-zsh/themes/
+# themes in ~/.oh-my-zsh/themes/
 export ZSH_THEME="robbyrussell"
 
 # Comment this out to disable weekly auto-update checks
