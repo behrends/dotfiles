@@ -8,8 +8,7 @@ Dir.chdir File.dirname(__FILE__) do
 
   Dir['*'].each do |file|
     next if !File.extname(file).empty? || file == 'manual'
-    target_name = file == 'bin' ? file : ".#{file}"
-    target = File.join(home, target_name)
+    target = File.join(home, ".#{file}")
     unless File.exist? target
       system %[ln -vsf #{File.join(dotfiles_dir, file)} #{target}]
     end
