@@ -22,5 +22,5 @@ source $ZSH/oh-my-zsh.sh
 
 export RUBYMINE_HOME="/Applications/RubyMine 3.1.1.app/"
 
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$HOME/bin:$PATH
 
