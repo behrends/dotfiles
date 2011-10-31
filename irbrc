@@ -1,6 +1,6 @@
 require 'rubygems'
-require 'wirble'
-require 'hirb'
+require 'Wirble'
+require 'Hirb'
 require 'ap'
 
 Wirble.init
