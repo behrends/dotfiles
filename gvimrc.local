@@ -16,3 +16,5 @@ function! ToggleRelativeNumber()
   endif
 endfunction
 map <C-L> :call ToggleRelativeNumber()<cr>
+
+color vividchalk
