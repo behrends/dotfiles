@@ -12,7 +12,7 @@ if [ "$OSTYPE" = "linux-gnu" ]; then
   bindkey "^[[1;3C" forward-word
   bindkey "^[[1;3D" backward-word
 else
-  plugins=(git)
+  plugins=(bundler brew gem git)
 fi
 
 source $ZSH/oh-my-zsh.sh
