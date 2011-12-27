@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # themes in ~/.oh-my-zsh/themes/
-export ZSH_THEME="robbyrussell"
+export ZSH_THEME="erikbehrends"
 
 # Comment this out to disable weekly auto-update checks
 # export DISABLE_AUTO_UPDATE="true"

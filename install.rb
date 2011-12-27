@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 # from https://github.com/mislav/dotfiles/blob/master/install.rb
 
+require 'fileutils'
+
 home = ENV['HOME']
 
 Dir.chdir File.dirname(__FILE__) do
@@ -13,4 +15,6 @@ Dir.chdir File.dirname(__FILE__) do
       system %[ln -vsf #{File.join(dotfiles_dir, file)} #{target}]
     end
   end
+
+  FileUtils.cp './zsh-theme/erikbehrends.zsh-theme', "#{home}/.oh-my-zsh/themes/"
 end
