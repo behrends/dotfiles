@@ -11,9 +11,6 @@ imap <D-t> <Esc>:CommandT<CR>
 " https://github.com/jasonm/dotfiles/commit/fbf876a703fa161e46c217c048c3090f1cfd5c4a
 " http://stackoverflow.com/questions/762515/vim-remap-key-to-toggle-line-numbering
 " http://stackoverflow.com/questions/4387210/vim-how-to-map-two-tasks-under-one-shortcut-key
-let g:relativenumber = 0
-set nonumber
-set relativenumber
 function! ToggleRelativeNumber()
   if g:relativenumber == 0
     let g:relativenumber = 1
@@ -25,6 +22,10 @@ function! ToggleRelativeNumber()
     set relativenumber
   endif
 endfunction
+" start with absolute line numbering
+let g:relativenumber = 0
+:call ToggleRelativeNumber()
+
 map <C-L> :call ToggleRelativeNumber()<cr>
 
 color vividchalk
