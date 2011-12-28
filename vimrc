@@ -22,5 +22,5 @@ set smartcase                   " ... unless they contain at least one capital l
 
 set guifont=Meslo\ LG\ M\ DZ:h13
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-map <Leader><Leader><Leader> :noh<CR>
+" map <Leader><Leader><Leader> :noh<CR>
 color vividchalk

@@ -1,3 +1,13 @@
+set fuoptions=maxhorz,maxvert " Fullscreen takes up entire screen
+macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>  " Command-Return for fullscreen
+
+set guioptions-=T " Start without the toolbar
+
+" Command-T for CommandT
+macmenu &File.New\ Tab key=<D-T>
+map <D-t> :CommandT<CR>
+imap <D-t> <Esc>:CommandT<CR>
+
 " https://github.com/jasonm/dotfiles/commit/fbf876a703fa161e46c217c048c3090f1cfd5c4a
 " http://stackoverflow.com/questions/762515/vim-remap-key-to-toggle-line-numbering
 " http://stackoverflow.com/questions/4387210/vim-how-to-map-two-tasks-under-one-shortcut-key
