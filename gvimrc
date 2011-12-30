@@ -7,6 +7,8 @@ set guioptions-=T " Start without the toolbar
 macmenu &File.New\ Tab key=<D-T>
 map <D-t> :CommandT<CR>
 imap <D-t> <Esc>:CommandT<CR>
+" reduce CommandT buffer height
+let g:CommandTMaxHeight=20
 
 " https://github.com/jasonm/dotfiles/commit/fbf876a703fa161e46c217c048c3090f1cfd5c4a
 " http://stackoverflow.com/questions/762515/vim-remap-key-to-toggle-line-numbering
