@@ -22,3 +22,6 @@
 [submodule "vim/src/bundle/vim-surround"]
 	path = vim/src/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/src/bundle/command-t"]
+	path = vim/src/bundle/command-t
+	url = https://github.com/wincent/Command-T.git

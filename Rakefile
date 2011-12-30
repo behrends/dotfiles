@@ -1,5 +1,4 @@
-task default: [:submodules, :ruby, :vim, :zsh,]
-#task default: [:tmp_dirs, :update, :command_t, :link]
+task default: [:submodules, :ruby, :vim, :zsh, :command_t]
 
 task :submodules do
   sh 'git submodule update --init'
@@ -27,6 +26,11 @@ task :zsh do
   end
 
   cp 'zsh/zsh-theme/erikbehrends.zsh-theme', File.join(Dir.home,'.oh-my-zsh/themes/')
+end
+
+task :command_t do
+  puts 'Compiling Command-T plugin...'
+  Dir.chdir('vim/src/bundle/command-t/ruby/command-t') { sh 'rake make' }
 end
 
 def create_link source_dir, source_file
