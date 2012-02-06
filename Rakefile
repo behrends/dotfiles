@@ -1,4 +1,4 @@
-task default: [:submodules, :ruby, :vim, :zsh, :command_t]
+task default: [:submodules, :ruby, :vim, :zsh, :command_t, :misc]
 
 task :submodules do
   sh 'git submodule update --init'
@@ -31,6 +31,12 @@ end
 task :command_t do
   puts 'Compiling Command-T plugin...'
   Dir.chdir('vim/src/bundle/command-t/ruby/command-t') { sh 'rake make' }
+end
+
+task :misc do
+  %w[ackrc].each do |file|
+    create_link 'misc', file
+  end
 end
 
 def create_link source_dir, source_file
