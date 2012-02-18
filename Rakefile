@@ -1,4 +1,4 @@
-task default: [:submodules, :ruby, :vim, :zsh, :command_t, :misc]
+task default: [:submodules, :ruby, :vim, :sublime, :zsh, :command_t, :misc]
 
 task :submodules do
   sh 'git submodule update --init'
@@ -18,6 +18,11 @@ task :vim do
   # link main vim dir
   vim_dir = File.join(Dir.home, '.vim') 
   ln_s File.join(Dir.pwd, 'vim/src'), vim_dir unless File.symlink? vim_dir
+end
+
+task :sublime do
+  target = File.join(Dir.home, 'Library/Application Support/Sublime Text 2/Packages/User/')
+  cp 'sublime/Preferences.sublime-settings', target 
 end
 
 task :zsh do
