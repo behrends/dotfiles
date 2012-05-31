@@ -1,9 +1,6 @@
 require 'rubygems'
-require 'Wirble'
+require 'brice/init'
 require 'Hirb'
 require 'ap'
-
-Wirble.init
-Wirble.colorize
 
 Hirb::View.enable
