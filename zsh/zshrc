@@ -22,6 +22,10 @@ cdpath=($HOME/Documents/Dev)
 
 export PATH=/usr/local/bin:$HOME/bin:$PATH
 
+if [[ -e "$HOME/.zshrc.local" ]]; then 
+  source $HOME/.zshrc.local
+fi
+
 export EDITOR=vim
 
 export LESS="-RX"
