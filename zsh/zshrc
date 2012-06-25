@@ -29,3 +29,5 @@ fi
 export EDITOR=vim
 
 export LESS="-RX"
+
+alias grm='git rebase master'
