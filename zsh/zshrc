@@ -33,3 +33,5 @@ export EDITOR=vim
 export LESS="-RX"
 
 alias grm='git rebase master'
+alias gh="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+alias gsf='git show --name-only'
