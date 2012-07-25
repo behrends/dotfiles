@@ -1,6 +1,5 @@
 require 'rubygems'
-require 'brice/init'
-require 'Hirb'
+require 'hirb'
 require 'ap'
 
-Hirb::View.enable
+Hirb.enable
