@@ -28,6 +28,10 @@ if [[ -e "$HOME/.zshrc.local" ]]; then
   source $HOME/.zshrc.local
 fi
 
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
+
 export EDITOR=vim
 
 export LESS="-RX"
