@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 cdpath=($HOME/Documents/Dev)
 
-export PATH=/usr/local/bin:$HOME/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH
 
 if [[ -e "$HOME/.zshrc.local" ]]; then 
   source $HOME/.zshrc.local
