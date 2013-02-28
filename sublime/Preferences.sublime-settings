@@ -1,8 +1,35 @@
 {
+	"bold_folder_labels": true,
 	"caret_style": "phase",
+	"color_scheme": "Packages/User/Solarized (light).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		".swp",
+		".DS_Store"
+	],
+	"folder_exclude_patterns":
+	[
+		".bundle",
+		".git",
+		"tmp"
+	],
 	"font_face": "Meslo LG M DZ",
-	"font_size": 13,
+	"font_size": 12.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		120
+	],
+	"show_tab_close_buttons": false,
 	"tab_size": 2,
+	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true
 }
