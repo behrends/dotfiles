@@ -16,5 +16,5 @@ Dir.chdir File.dirname(__FILE__) do
     end
   end
 
-  FileUtils.cp './zsh-theme/erikbehrends.zsh-theme', "#{home}/.oh-my-zsh/themes/"
+  FileUtils.cp './zsh/zsh-theme/erikbehrends.zsh-theme', "#{home}/.oh-my-zsh/themes/"
 end
