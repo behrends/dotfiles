@@ -1,0 +1,1 @@
+pbpaste | highlight --syntax=rb --out-format=rtf --style=dhbw --font-size 58 --font Menlo | pbcopy
