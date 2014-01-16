@@ -20,6 +20,7 @@ eval "$(rbenv init -)"
 
 # enable vi mode in shell
 set -o vi
+bindkey ^R history-incremental-search-backward
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
