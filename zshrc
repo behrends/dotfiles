@@ -18,5 +18,8 @@ alias gh="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 # rbenv
 eval "$(rbenv init -)"
 
+# enable vi mode in shell
+set -o vi
+
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
