@@ -77,3 +77,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# android
+export ANDROID_HOME=/Users/behrends/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
