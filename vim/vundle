@@ -7,6 +7,11 @@ set rtp+=$VIMHOME/bundle/Vundle.vim
 call vundle#begin()
  
 Plugin 'gmarik/Vundle.vim'      " let Vundle manage Vundle, required
+
+
+" ---------- Plugins
+Plugin 'kien/ctrlp.vim'         " Fuzzy finder
+
  
 " ---------- All Plugins must be added before the following line
 call vundle#end()               " required
