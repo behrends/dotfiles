@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'      " let Vundle manage Vundle, required
 " ---------- Plugins
 Plugin 'kien/ctrlp.vim'         " Fuzzy finder
 
+Plugin 'scrooloose/syntastic'   " Syntax checking
+
  
 " ---------- All Plugins must be added before the following line
 call vundle#end()               " required
