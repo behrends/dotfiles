@@ -1,0 +1,14 @@
+set nocompatible                " be iMproved
+ 
+filetype off                    " required!
+
+" set the runtime path to include Vundle and initialize
+set rtp+=$VIMHOME/bundle/Vundle.vim
+call vundle#begin()
+ 
+Plugin 'gmarik/Vundle.vim'      " let Vundle manage Vundle, required
+ 
+" ---------- All Plugins must be added before the following line
+call vundle#end()               " required
+filetype plugin indent on       " required
+

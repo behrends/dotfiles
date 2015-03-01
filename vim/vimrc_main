@@ -1,0 +1,41 @@
+" sources
+" https://gist.github.com/napcs/532968
+" https://github.com/jez/vim-as-an-ide
+
+set nocompatible                    " don't need to keep compatibility with Vi
+
+set backspace=indent,eol,start      " allow backspacing over everything in insert mode
+
+set ruler                           " show the cursor position all the time
+set number                          " show line numbers
+set showcmd                         " show incomplete cmds down the bottom
+set showmode                        " show current mode down the bottom
+set showmatch                       " set show matching parenthesis
+syntax on                           " turn on syntax highlighting
+
+set incsearch                       " find the next match as we type the search
+set hlsearch                        " hilight searches by default
+set ignorecase                      " ignore case when searching
+
+"set mouse-=a                       " disable mouse automatically entering visual mode
+set mouse=a                         " enable mouse automatically entering visual mode
+
+set nowrap                          " don't wrap lines
+set shiftwidth=2                    " for when <TAB> is pressed at the beginning of a line
+set tabstop=2                       " a hard tab is 2 spaces
+set softtabstop=2                   " default to 2 spaces for the soft tab
+set expandtab                       " spaces instead of tabs for better cross-editor compatibility
+
+" ----------- Shortcut Key Configuration ----------------------------------
+let mapleader = ","                 " remap leader to ',' 
+
+nmap <leader><SPACE> <C-^>          " switch to previous file with ',spacebar'
+
+" Make these commonly mistyped commands still work
+command! WQ wq
+command! Wq wq
+command! W w
+command! Q q
+
+command! C nohlsearch               " use :C to clear search highlighting
+
