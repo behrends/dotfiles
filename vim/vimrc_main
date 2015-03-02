@@ -25,6 +25,7 @@ set shiftwidth=2                    " for when <TAB> is pressed at the beginning
 set tabstop=2                       " a hard tab is 2 spaces
 set softtabstop=2                   " default to 2 spaces for the soft tab
 set expandtab                       " spaces instead of tabs for better cross-editor compatibility
+set textwidth=80                   " tell vim where to break lines when formatting paragraphs
 
 " ----------- Shortcut Key Configuration ----------------------------------
 let mapleader = ","                 " remap leader to ',' 
