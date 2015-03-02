@@ -17,8 +17,8 @@ set incsearch                       " find the next match as we type the search
 set hlsearch                        " hilight searches by default
 set ignorecase                      " ignore case when searching
 
-"set mouse-=a                       " disable mouse automatically entering visual mode
-set mouse=a                         " enable mouse automatically entering visual mode
+set mouse-=a                       " disable mouse automatically entering visual mode
+"set mouse=a                         " enable mouse automatically entering visual mode
 
 set nowrap                          " don't wrap lines
 set shiftwidth=2                    " for when <TAB> is pressed at the beginning of a line
