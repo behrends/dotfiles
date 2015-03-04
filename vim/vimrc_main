@@ -40,3 +40,5 @@ command! Q q
 
 command! C nohlsearch               " use :C to clear search highlighting
 
+" ----------- Plugin Configuration ----------------------------------
+let g:syntastic_disabled_filetypes=['tex']
