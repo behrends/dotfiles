@@ -1,6 +1,4 @@
-" sources
-" https://gist.github.com/napcs/532968
-" https://github.com/jez/vim-as-an-ide
+" initial version based on https://gist.github.com/napcs/532968
 
 set nocompatible                    " don't need to keep compatibility with Vi
 
@@ -17,15 +15,17 @@ set incsearch                       " find the next match as we type the search
 set hlsearch                        " hilight searches by default
 set ignorecase                      " ignore case when searching
 
-set mouse-=a                       " disable mouse automatically entering visual mode
-"set mouse=a                         " enable mouse automatically entering visual mode
+set mouse-=a                        " disable mouse automatically entering visual mode
+"set mouse=a                        " enable mouse automatically entering visual mode
 
 set nowrap                          " don't wrap lines
 set shiftwidth=2                    " for when <TAB> is pressed at the beginning of a line
 set tabstop=2                       " a hard tab is 2 spaces
 set softtabstop=2                   " default to 2 spaces for the soft tab
 set expandtab                       " spaces instead of tabs for better cross-editor compatibility
-set textwidth=80                   " tell vim where to break lines when formatting paragraphs
+set textwidth=80                    " tell vim where to break lines when formatting paragraphs
+
+
 
 " ----------- Shortcut Key Configuration ----------------------------------
 let mapleader = ","                 " remap leader to ',' 
