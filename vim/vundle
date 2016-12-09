@@ -14,6 +14,8 @@ Plugin 'kien/ctrlp.vim'         " Fuzzy finder
 
 Plugin 'scrooloose/syntastic'   " Syntax checking
 
+Plugin 'tpope/vim-ragtag'       " HTML support
+
  
 " ---------- All Plugins must be added before the following line
 call vundle#end()               " required

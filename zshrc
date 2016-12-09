@@ -83,4 +83,11 @@ export ANDROID_HOME=/Users/behrends/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # TeX
-export PATH=$PATH:/usr/texbin
+export PATH=$PATH:/Library/TeX/texbin
+
+# NAOqi
+export PYTHONPATH=$PYTHONPATH:$HOME/projects/NAO/pynaoqi-python2.7-2.1.4.13-mac64export PYTHONPATH=$HOME/projects/NAO/pynaoqi-python2.7-2.1.4.13-mac64
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/projects/NAO/pynaoqi-python2.7-2.1.4.13-mac64
+
+#YARN
+export PATH="$PATH:`yarn global bin`"
