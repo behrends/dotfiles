@@ -80,7 +80,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # android
 export ANDROID_HOME=/Users/behrends/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
 
 # TeX
 export PATH=$PATH:/Library/TeX/texbin
@@ -91,3 +91,6 @@ export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$HOME/projects/NAO/pynaoqi-python2.7
 
 #YARN
 export PATH="$PATH:`yarn global bin`"
+
+#OCaml
+eval $(opam config env)
