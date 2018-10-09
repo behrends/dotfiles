@@ -94,3 +94,6 @@ export PATH="$PATH:`yarn global bin`"
 
 #OCaml
 eval $(opam config env)
+
+#Flutter
+export PATH=$HOME/projects/mobile/flutter/flutter/bin:$PATH
