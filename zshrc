@@ -97,3 +97,5 @@ eval $(opam config env)
 
 #Flutter
 export PATH=$HOME/projects/mobile/flutter/flutter/bin:$PATH
+
+export PATH="/usr/local/opt/node@12/bin:$PATH"
