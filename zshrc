@@ -13,6 +13,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# set terminal to English
+export LANG="en_US.UTF-8" 
+
 alias gh="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 
 # autojump
@@ -20,7 +23,7 @@ alias gh="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 
 # android
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
 
 # Starship
 eval "$(starship init zsh)"
