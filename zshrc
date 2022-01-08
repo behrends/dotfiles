@@ -25,6 +25,9 @@ alias gh="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
 
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+
 # Starship
 eval "$(starship init zsh)"
 
