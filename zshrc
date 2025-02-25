@@ -16,8 +16,6 @@ source $ZSH/oh-my-zsh.sh
 # set terminal to English
 export LANG="en_US.UTF-8" 
 
-alias gh="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
-
 # autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
